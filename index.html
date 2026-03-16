@@ -11,13 +11,13 @@
 body{
 font-family:Arial;
 margin:0;
-background:#f1f5f9;
+background:#f4f6f9;
 }
 
 header{
 background:#0f172a;
 color:white;
-padding:30px;
+padding:25px;
 text-align:center;
 }
 
@@ -29,21 +29,26 @@ text-align:center;
 
 nav a{
 color:white;
-margin:15px;
+margin:12px;
 text-decoration:none;
 font-weight:bold;
 }
 
-.hero{
-padding:60px;
+.search-box{
 text-align:center;
-background:#e2e8f0;
+margin:30px;
+}
+
+.search-box input{
+padding:10px;
+width:300px;
+border-radius:5px;
+border:1px solid #ccc;
 }
 
 .container{
 width:85%;
 margin:auto;
-margin-top:30px;
 }
 
 .section{
@@ -58,6 +63,20 @@ box-shadow:0 0 10px rgba(0,0,0,0.1);
 width:220px;
 margin:10px;
 border-radius:8px;
+}
+
+.blog-post{
+border-bottom:1px solid #eee;
+padding:10px 0;
+}
+
+button{
+padding:8px 15px;
+background:#2563eb;
+color:white;
+border:none;
+border-radius:5px;
+cursor:pointer;
 }
 
 footer{
@@ -85,134 +104,138 @@ margin-top:40px;
 <nav>
 
 <a href="#">Home</a>
-
-<a href="#">Diploma Notes</a>
-
-<a href="#">BTech Notes</a>
-
-<a href="#">Site Knowledge</a>
-
-<a href="#">Subjects</a>
-
-<a href="#">RMC Gallery</a>
-
-<a href="#">Vlogs</a>
-
-<a href="#">Paid Notes</a>
-
-<a href="#">About</a>
+<a href="#notes">Notes</a>
+<a href="#blog">Blog</a>
+<a href="#gallery">Gallery</a>
+<a href="#vlog">Vlogs</a>
+<a href="#paid">Paid Notes</a>
+<a href="#about">About</a>
 
 </nav>
 
-<div class="hero">
+<div class="search-box">
 
-<h2>Learn Civil Engineering in Simple Way</h2>
-
-<p>Notes • Site Knowledge • Practical Civil Engineering</p>
+<input type="text" placeholder="Search civil engineering topics...">
 
 </div>
 
 <div class="container">
 
-<div class="section">
+<!-- NOTES SECTION -->
 
-<h2>📚 Diploma Civil Engineering Notes</h2>
+<div class="section" id="notes">
+
+<h2>📚 Civil Engineering Notes</h2>
 
 <ul>
 
-<li>Engineering Mechanics</li>
+<li>Engineering Mechanics <button>Download PDF</button></li>
 
-<li>Strength of Materials</li>
+<li>Strength of Materials <button>Download PDF</button></li>
 
-<li>RCC</li>
+<li>RCC Notes <button>Download PDF</button></li>
 
-<li>Surveying</li>
+<li>Surveying <button>Download PDF</button></li>
 
-<li>Soil Mechanics</li>
+<li>Soil Mechanics <button>Download PDF</button></li>
 
 </ul>
 
 </div>
 
-<div class="section">
+<!-- BLOG SECTION -->
 
-<h2>🎓 BTech Civil Engineering Notes</h2>
+<div class="section" id="blog">
 
-<ul>
+<h2>📝 Civil Engineering Blog</h2>
 
-<li>Structural Analysis</li>
+<div class="blog-post">
 
-<li>Geotechnical Engineering</li>
+<h3>Concrete Mix Design Explained</h3>
 
-<li>Concrete Technology</li>
-
-<li>Transportation Engineering</li>
-
-</ul>
+<p>Understanding mix design for M20, M25, and M30 concrete.</p>
 
 </div>
 
-<div class="section">
+<div class="blog-post">
 
-<h2>🏗 Site Knowledge</h2>
+<h3>Slump Test Procedure</h3>
 
-<ul>
-
-<li>Conecrete Cube Test</li>
-
-<li>Slump Test</li>
-
-<li>Mix Design</li>
-
-<li>PPC vs OPC Cement</li>
-
-<li>Mivan Shuttering</li>
-
-</ul>
+<p>Step by step guide for performing slump test on site.</p>
 
 </div>
 
-<div class="section">
+<div class="blog-post">
 
-<h2>📷 Construction & RMC Gallery</h2>
+<h3>Cube Test for Concrete</h3>
+
+<p>How compressive strength of concrete is tested.</p>
+
+</div>
+
+</div>
+
+<!-- GALLERY -->
+
+<div class="section" id="gallery">
+
+<h2>📷 Construction Gallery</h2>
 
 <div class="gallery">
-
-<img src="https://images.unsplash.com/photo-1581091215367-59ab6b36b64b">
 
 <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e">
 
 <img src="https://images.unsplash.com/photo-1590650046871-92c887180603">
 
-</div>
+<img src="https://images.unsplash.com/photo-1581091215367-59ab6b36b64b">
 
 </div>
 
-<div class="section">
+</div>
+
+<!-- VLOG -->
+
+<div class="section" id="vlog">
+
+<h2>🎥 Civil Engineering Vlogs</h2>
+
+<p>Future YouTube videos will appear here.</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ"></iframe>
+
+</div>
+
+<!-- PAID NOTES -->
+
+<div class="section" id="paid">
 
 <h2>💰 Premium Paid Notes</h2>
 
 <ul>
 
-<li>Concrete Technology Master Notes</li>
+<li>Concrete Technology Master Guide – ₹49</li>
 
-<li>Mix Design Guide</li>
+<li>Mix Design Full Course – ₹99</li>
 
-<li>RMC QA QC Handbook</li>
+<li>RMC QA QC Guide – ₹149</li>
 
-<li>Site Engineer Interview Guide</li>
+<li>Site Engineer Handbook – ₹199</li>
 
 </ul>
 
+<button>Buy Now</button>
+
 </div>
 
-<div class="section">
+<!-- ABOUT -->
+
+<div class="section" id="about">
 
 <h2>👤 About Rishu Kumar</h2>
 
 <p>
 
-Hi, I am Rishu Kumar, a civil engineer passionate about sharing practical knowledge about construction, concrete technology, and site engineering.
+Hi, I am Rishu Kumar, a civil engineer passionate about sharing practical knowledge about construction, RMC, concrete technology, and site engineering.
 
 </p>
 
